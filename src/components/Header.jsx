@@ -39,7 +39,7 @@ export default function Header({ basket, removeFromBasket, increaseQuantity, dec
                                                 {basket.map(guitar => (
                                                     <tr key={guitar.id}>
                                                         <td>
-                                                            <img className="img-fluid" src={`./public/img/${guitar.image}.jpg`} alt={`Guitar ${guitar.name}`} />
+                                                            <img className="img-fluid" src={`./img/${guitar.image}.jpg`} alt={`Guitar ${guitar.name}`} />
                                                         </td>
                                                         <td>{guitar.name}</td>
                                                         <td className="fw-bold">${guitar.price}</td>
