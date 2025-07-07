@@ -1,11 +1,4 @@
-import { useMemo } from "react"
-
-export default function Header({ basket, removeFromBasket, increaseQuantity, decreaseQuantity, clearBasket }) {
-    // Derived state
-    const isEmpty = useMemo(() => basket.length === 0, [basket])
-
-    const basketTotal = useMemo(() => basket.reduce((total, item) => total + (item.quantity * item.price), 0), [basket])
-
+export default function Header({ basket, removeFromBasket, increaseQuantity, decreaseQuantity, clearBasket, isEmpty, basketTotal }) {
     return (
         <header className="py-5 header">
             <div className="container-xl">
